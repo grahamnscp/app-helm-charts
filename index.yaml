@@ -1,0 +1,37 @@
+apiVersion: v1
+entries:
+  app-chart:
+  - apiVersion: v2
+    appVersion: "1.1"
+    created: "2024-01-19T11:11:34.397065Z"
+    description: Basic App Helm chart
+    digest: ea09942e63e6a5aac1058748756e6968da859e25bdae6f58c3955e2d86ea7460
+    icon: https://media.istockphoto.com/id/1133905340/vector/greeting-sign-hello-symbol.jpg?s=612x612&w=0&k=20&c=bRlrvDdp2EAW3bi3f6wEMdVQs_G3_eZn3ZrwtfQQ6pw=
+    name: app-chart
+    type: application
+    urls:
+    - app-chart/app-chart-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2024-01-19T11:11:34.395073Z"
+    description: Basic App Helm chart
+    digest: abe918833fd81ac2000f88cd47c8a73c42069ffa743c6d306ef8b699265e6d31
+    icon: https://media.istockphoto.com/id/1133905340/vector/greeting-sign-hello-symbol.jpg?s=612x612&w=0&k=20&c=bRlrvDdp2EAW3bi3f6wEMdVQs_G3_eZn3ZrwtfQQ6pw=
+    name: app-chart
+    type: application
+    urls:
+    - app-chart/app-chart-0.1.0.tgz
+    version: 0.1.0
+  helm-guestbook:
+  - apiVersion: v2
+    appVersion: "1.0"
+    created: "2024-01-19T11:11:34.397708Z"
+    description: A Helm chart for Kubernetes
+    digest: 6546bd3d01fa1664c77965fc5c37e4d9c0fe0767ddcab29c50771a2295fef07f
+    name: helm-guestbook
+    type: application
+    urls:
+    - helm-guestbook/helm-guestbook-0.1.0.tgz
+    version: 0.1.0
+generated: "2024-01-19T11:11:34.393572Z"
