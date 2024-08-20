@@ -3,9 +3,9 @@ entries:
   app-chart:
   - apiVersion: v2
     appVersion: "1.1"
-    created: "2024-01-19T11:11:34.397065Z"
+    created: "2024-08-20T10:58:51.889524+01:00"
     description: Basic App Helm chart
-    digest: ea09942e63e6a5aac1058748756e6968da859e25bdae6f58c3955e2d86ea7460
+    digest: 93954075edeecbee8c32c6aa913dfd7c896283a490594c9b553c127a349eda89
     icon: https://media.istockphoto.com/id/1133905340/vector/greeting-sign-hello-symbol.jpg?s=612x612&w=0&k=20&c=bRlrvDdp2EAW3bi3f6wEMdVQs_G3_eZn3ZrwtfQQ6pw=
     name: app-chart
     type: application
@@ -14,7 +14,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2024-01-19T11:11:34.395073Z"
+    created: "2024-08-20T10:58:51.885427+01:00"
     description: Basic App Helm chart
     digest: abe918833fd81ac2000f88cd47c8a73c42069ffa743c6d306ef8b699265e6d31
     icon: https://media.istockphoto.com/id/1133905340/vector/greeting-sign-hello-symbol.jpg?s=612x612&w=0&k=20&c=bRlrvDdp2EAW3bi3f6wEMdVQs_G3_eZn3ZrwtfQQ6pw=
@@ -26,7 +26,7 @@ entries:
   helm-guestbook:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2024-01-19T11:11:34.397708Z"
+    created: "2024-08-20T10:58:51.890122+01:00"
     description: A Helm chart for Kubernetes
     digest: 6546bd3d01fa1664c77965fc5c37e4d9c0fe0767ddcab29c50771a2295fef07f
     name: helm-guestbook
@@ -34,4 +34,31 @@ entries:
     urls:
     - helm-guestbook/helm-guestbook-0.1.0.tgz
     version: 0.1.0
-generated: "2024-01-19T11:11:34.393572Z"
+  quake-kube:
+  - apiVersion: v2
+    appVersion: v1.0.7
+    created: "2024-08-20T10:58:51.890297+01:00"
+    description: Quake 3 Arena in a browser
+    digest: 752a52a88242f35973dd729469e0f5e44627082cce24ae49f1490bc773faff0e
+    icon: https://upload.wikimedia.org/wikipedia/de/7/78/Quake_III_Arena_Logo.svg
+    maintainers:
+    - name: Rancher
+      url: https://github.com/rancher
+    name: quake-kube
+    type: application
+    urls:
+    - quake-kube/quake-kube-0.2.3.tgz
+    version: 0.2.3
+  tetris:
+  - apiVersion: v2
+    appVersion: 0.1.8
+    created: "2024-08-20T10:58:51.890915+01:00"
+    description: An easy Tetris Clone running in your browser
+    digest: caa8ab126b79cdc747645eae1489551b55d1152d85fa8741318d188adba2c9ea
+    icon: https://upload.wikimedia.org/wikipedia/commons/9/9c/Typical_Tetris_Game.svg
+    name: tetris
+    type: application
+    urls:
+    - rancher-tetris/tetris-0.1.9.tgz
+    version: 0.1.9
+generated: "2024-08-20T10:58:51.882619+01:00"

@@ -1,0 +1,10 @@
+apiVersion: v2
+appVersion: v1.0.7
+description: Quake 3 Arena in a browser
+icon: https://upload.wikimedia.org/wikipedia/de/7/78/Quake_III_Arena_Logo.svg
+maintainers:
+- name: Rancher
+  url: https://github.com/rancher
+name: quake-kube
+type: application
+version: 0.2.3
