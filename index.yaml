@@ -3,7 +3,7 @@ entries:
   app-chart:
   - apiVersion: v2
     appVersion: "1.1"
-    created: "2024-08-20T10:58:51.889524+01:00"
+    created: "2024-08-20T11:28:59.153164+01:00"
     description: Basic App Helm chart
     digest: 93954075edeecbee8c32c6aa913dfd7c896283a490594c9b553c127a349eda89
     icon: https://media.istockphoto.com/id/1133905340/vector/greeting-sign-hello-symbol.jpg?s=612x612&w=0&k=20&c=bRlrvDdp2EAW3bi3f6wEMdVQs_G3_eZn3ZrwtfQQ6pw=
@@ -14,7 +14,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2024-08-20T10:58:51.885427+01:00"
+    created: "2024-08-20T11:28:59.148709+01:00"
     description: Basic App Helm chart
     digest: abe918833fd81ac2000f88cd47c8a73c42069ffa743c6d306ef8b699265e6d31
     icon: https://media.istockphoto.com/id/1133905340/vector/greeting-sign-hello-symbol.jpg?s=612x612&w=0&k=20&c=bRlrvDdp2EAW3bi3f6wEMdVQs_G3_eZn3ZrwtfQQ6pw=
@@ -26,7 +26,7 @@ entries:
   helm-guestbook:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2024-08-20T10:58:51.890122+01:00"
+    created: "2024-08-20T11:28:59.15364+01:00"
     description: A Helm chart for Kubernetes
     digest: 6546bd3d01fa1664c77965fc5c37e4d9c0fe0767ddcab29c50771a2295fef07f
     name: helm-guestbook
@@ -34,10 +34,42 @@ entries:
     urls:
     - helm-guestbook/helm-guestbook-0.1.0.tgz
     version: 0.1.0
+  nfs-server-provisioner:
+  - apiVersion: v2
+    appVersion: 3.0.0
+    created: "2024-08-20T11:28:59.154082+01:00"
+    dependencies:
+    - name: nfs-server-provisioner
+      repository: https://raphaelmonrouzeau.github.io/charts/repository/
+      version: 1.x.x
+    description: nfs-server-provisioner is an out-of-tree dynamic provisioner for
+      Kubernetes. You can use it to quickly & easily deploy shared storage that works
+      almost anywhere.
+    digest: a6f8a16e3f09a29b9c827093f30e9bf2346bc2ca09a7e2c4fb32eaf843eef6df
+    home: https://github.com/kubernetes-sigs/nfs-ganesha-server-and-external-provisioner
+    keywords:
+    - nfs
+    - storage
+    maintainers:
+    - email: kiall@macinnes.ie
+      name: kiall
+    - email: kvapss@gmail.com
+      name: kvaps
+    - email: joaocc-dev@live.com
+      name: joaocc
+    - name: Rancher
+      url: https://github.com/rancher
+    name: nfs-server-provisioner
+    sources:
+    - https://github.com/kubernetes-sigs/nfs-ganesha-server-and-external-provisioner/tree/master/deploy/helm
+    type: application
+    urls:
+    - nfs-server-provisioner/nfs-server-provisioner-1.2.6.tgz
+    version: 1.2.6
   quake-kube:
   - apiVersion: v2
     appVersion: v1.0.7
-    created: "2024-08-20T10:58:51.890297+01:00"
+    created: "2024-08-20T11:28:59.154516+01:00"
     description: Quake 3 Arena in a browser
     digest: 752a52a88242f35973dd729469e0f5e44627082cce24ae49f1490bc773faff0e
     icon: https://upload.wikimedia.org/wikipedia/de/7/78/Quake_III_Arena_Logo.svg
@@ -52,7 +84,7 @@ entries:
   tetris:
   - apiVersion: v2
     appVersion: 0.1.8
-    created: "2024-08-20T10:58:51.890915+01:00"
+    created: "2024-08-20T11:28:59.155146+01:00"
     description: An easy Tetris Clone running in your browser
     digest: caa8ab126b79cdc747645eae1489551b55d1152d85fa8741318d188adba2c9ea
     icon: https://upload.wikimedia.org/wikipedia/commons/9/9c/Typical_Tetris_Game.svg
@@ -61,4 +93,4 @@ entries:
     urls:
     - rancher-tetris/tetris-0.1.9.tgz
     version: 0.1.9
-generated: "2024-08-20T10:58:51.882619+01:00"
+generated: "2024-08-20T11:28:59.146664+01:00"
