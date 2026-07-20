@@ -3,7 +3,7 @@ entries:
   app-chart:
   - apiVersion: v2
     appVersion: "1.1"
-    created: "2024-08-20T11:28:59.153164+01:00"
+    created: "2026-07-20T09:40:52.957489+01:00"
     description: Basic App Helm chart
     digest: 93954075edeecbee8c32c6aa913dfd7c896283a490594c9b553c127a349eda89
     icon: https://media.istockphoto.com/id/1133905340/vector/greeting-sign-hello-symbol.jpg?s=612x612&w=0&k=20&c=bRlrvDdp2EAW3bi3f6wEMdVQs_G3_eZn3ZrwtfQQ6pw=
@@ -14,7 +14,7 @@ entries:
     version: 0.1.1
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2024-08-20T11:28:59.148709+01:00"
+    created: "2026-07-20T09:40:52.952802+01:00"
     description: Basic App Helm chart
     digest: abe918833fd81ac2000f88cd47c8a73c42069ffa743c6d306ef8b699265e6d31
     icon: https://media.istockphoto.com/id/1133905340/vector/greeting-sign-hello-symbol.jpg?s=612x612&w=0&k=20&c=bRlrvDdp2EAW3bi3f6wEMdVQs_G3_eZn3ZrwtfQQ6pw=
@@ -26,7 +26,7 @@ entries:
   helm-guestbook:
   - apiVersion: v2
     appVersion: "1.0"
-    created: "2024-08-20T11:28:59.15364+01:00"
+    created: "2026-07-20T09:40:52.958052+01:00"
     description: A Helm chart for Kubernetes
     digest: 6546bd3d01fa1664c77965fc5c37e4d9c0fe0767ddcab29c50771a2295fef07f
     name: helm-guestbook
@@ -37,7 +37,7 @@ entries:
   nfs-server-provisioner:
   - apiVersion: v2
     appVersion: 3.0.0
-    created: "2024-08-20T11:28:59.154082+01:00"
+    created: "2026-07-20T09:40:52.95923+01:00"
     dependencies:
     - name: nfs-server-provisioner
       repository: https://raphaelmonrouzeau.github.io/charts/repository/
@@ -69,7 +69,7 @@ entries:
   quake-kube:
   - apiVersion: v2
     appVersion: v1.0.7
-    created: "2024-08-20T11:28:59.154516+01:00"
+    created: "2026-07-20T09:40:52.959793+01:00"
     description: Quake 3 Arena in a browser
     digest: 752a52a88242f35973dd729469e0f5e44627082cce24ae49f1490bc773faff0e
     icon: https://upload.wikimedia.org/wikipedia/de/7/78/Quake_III_Arena_Logo.svg
@@ -84,7 +84,7 @@ entries:
   tetris:
   - apiVersion: v2
     appVersion: 0.1.8
-    created: "2024-08-20T11:28:59.155146+01:00"
+    created: "2026-07-20T09:40:52.960577+01:00"
     description: An easy Tetris Clone running in your browser
     digest: caa8ab126b79cdc747645eae1489551b55d1152d85fa8741318d188adba2c9ea
     icon: https://upload.wikimedia.org/wikipedia/commons/9/9c/Typical_Tetris_Game.svg
@@ -93,4 +93,55 @@ entries:
     urls:
     - rancher-tetris/tetris-0.1.9.tgz
     version: 0.1.9
-generated: "2024-08-20T11:28:59.146664+01:00"
+  wordpress:
+  - annotations:
+      images: |
+        - name: apache-exporter
+          image: docker.io/bitnami/apache-exporter:1.0.10-debian-12-r55
+        - name: os-shell
+          image: docker.io/bitnami/os-shell:12-debian-12-r50
+        - name: wordpress
+          image: docker.io/bitnami/wordpress:6.8.2-debian-12-r4
+      licenses: Apache-2.0
+      tanzuCategory: application
+    apiVersion: v2
+    appVersion: 6.8.2
+    created: "2026-07-20T09:40:52.967455+01:00"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 7.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: oci://registry-1.docker.io/bitnamicharts
+      version: 22.x.x
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    description: WordPress is the world's most popular blogging and content management
+      platform. Powerful yet simple, everyone from students to global corporations
+      use it to build beautiful, functional websites.
+    digest: bd2e894ab4058042b0ab35ede400191e19c72d8e7f94e049ca1276cb94c9a343
+    home: https://bitnami.com
+    icon: https://dyltqmyl993wv.cloudfront.net/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - application
+    - blog
+    - cms
+    - http
+    - php
+    - web
+    - wordpress
+    maintainers:
+    - name: Broadcom, Inc. All Rights Reserved.
+      url: https://github.com/bitnami/charts
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/wordpress
+    urls:
+    - wordpress/wordpress-27.0.0.tgz
+    version: 27.0.0
+generated: "2026-07-20T09:40:52.93844+01:00"
